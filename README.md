@@ -8,6 +8,33 @@ A standalone HTML application for experimental, local WebGPU LoRA training. Load
 
 This is an alpha with model-specific graph contracts. A `.gguf` extension, a family name, or a small quantized download does not establish compatibility, memory fit, or useful training quality.
 
+## Development approach
+
+### Coded with AI assistance
+
+Nexus Adapter Studio was developed by **Rich Dunbar using AI-assisted coding**. Rich directed the project's goals, architecture and development priorities, using AI assistance for implementation, debugging, code review and documentation.
+
+The purpose was to make complex ideas easier to explore and reduce repetitive coding work, while keeping the development process focused on working experiments that could be tested and refined. AI-generated code still requires human review and validation; the documented checks and limitations remain important.
+
+### Built on the Nexus web-based inference engine
+
+Nexus Adapter Studio leverages **Rich's custom web-based inference engine**, developed through hundreds of **build–measure–learn iterations**. The application builds on that foundation to provide experimental local adapter training through JavaScript, WebGPU and WGSL.
+
+On supported dense profiles, its differentiable computation graphs allow selected LoRA parameters to be trained while the original model weights remain frozen. The GPT-oss route retains its separate output-head-only scope.
+
+This shared foundation does not imply universal model support or checkpoint compatibility between Nexus applications. The compatibility and export contracts below define the supported scope of this release.
+
+### Hundreds of iterations: build → measure → learn
+
+The development process followed a repeated cycle:
+
+1. **Build:** Implement an inference capability, training feature or targeted fix.
+2. **Measure:** Examine behavior, numerical checks, errors and feedback.
+3. **Learn:** Identify limitations, refine the approach and decide what to change.
+4. **Repeat:** Test the next revision and check for regressions.
+
+Hundreds of iterations shaped the inference engine and the workflow built around it. This describes the author's development process, rather than a claim that every iteration was a separately published or fully qualified release.
+
 ## Start here
 
 1. Extract the application ZIP and open `Nexus_Adapter_Studio.html` in a desktop browser with WebGPU support.
