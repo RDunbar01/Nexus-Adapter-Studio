@@ -1,0 +1,17 @@
+{
+  "status": "PASS within available scope",
+  "product_version": "2.7.0",
+  "tests": {
+    "focused_cpu_installer_and_benchmark_tests": 21,
+    "inline_script_syntax": 5,
+    "version_regeneration": "PASS: adapter-only archive filename and generated guide footer; body and other product guides unchanged",
+    "guide_visual_pages": 4
+  },
+  "limits": [
+    "Existing CPU PyTorch environment used after system Python lacked Torch.",
+    "No physical GPU/Windows run.",
+    "Original Word guide retains historical performance examples; footer advances to 2.7.0."
+  ],
+  "hardware_qualified": false,
+  "full_debug_guarantee": false
+}
