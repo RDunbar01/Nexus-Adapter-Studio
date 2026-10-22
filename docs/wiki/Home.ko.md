@@ -1,10 +1,10 @@
 # Nexus Adapter Optimization Studio — 홈
 
-## [브라우저에서 체험하기](<https://rdunbar01.github.io/Nexus-Adapter-Studio/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html>) · 활성화 대기 중
+## [브라우저에서 체험하기](<https://rdunbar01.github.io/Nexus-Adapter-Studio/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html>) · 브라우저 진입 페이지 게시됨
 
-이 릴리스의 Pages는 아직 활성화되거나 검증되지 않았습니다. 이 링크는 예정된 HTTPS 실행 주소이며 현재 제공되는 체험판이 아닙니다. GitHub에서 HTML 소스를 보는 것만으로 앱이 실행되지는 않습니다.
+HTTPS 브라우저 진입 페이지가 게시되었으며 초기 화면을 확인했습니다. 전체 WebGPU, Windows 또는 Radeon 작업 검증을 뜻하지는 않습니다. GitHub의 HTML 소스 보기에서는 앱이 실행되지 않습니다.
 
-게시 후 링크를 열고 **Check WebGPU adapter**를 선택하세요. 처음 10초의 목표는 UI와 브라우저 기능을 확인하는 것이며, 모델 다운로드 완료나 학습·추론을 보장하는 것이 아닙니다. 로딩 시간은 연결 상태와 기기에 따라 달라집니다.
+링크를 열고 **Check WebGPU adapter**를 선택하세요. 처음 10초의 목표는 UI와 브라우저 기능을 확인하는 것이며, 모델 다운로드 완료나 학습·추론을 보장하는 것이 아닙니다. 로딩 시간은 연결 상태와 기기에 따라 달라집니다.
 
 **HTML 체험판에는 Python이 필요하지 않습니다. 네이티브 PyTorch 백엔드에는 전체 다운로드가 필요합니다.** 같은 릴리스의 Python 설치 프로그램과 모든 데이터 조각을 함께 보관하세요. HTML 안에서 Python이나 PyTorch는 실행되지 않습니다. WebGPU 지원, 로컬 입력 파일 및 모델 호환성 확인은 별도로 필요합니다.
 
@@ -18,9 +18,9 @@
 
 **2.7.0 · 한국어**
 
-이 페이지는 다음 릴리스를 위한 검토용 Wiki 원고입니다. 공개 Wiki나 브라우저 체험판이 이미 게시되었다는 뜻은 아닙니다.
+게시된 릴리스 문서입니다. 아래 검증 범위와 제한을 확인하세요.
 
-[English](Home.md) · [Français](Home.fr.md) · [日本語](Home.ja.md) · [한국어](Home.ko.md)
+[English](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home) · [Français](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home.fr) · [日本語](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home.ja) · [한국어](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home.ko)
 
 ## 목적
 
@@ -30,13 +30,13 @@
 
 ### 브라우저 에디션
 
-[HTML](../../Nexus_Adapter_Optimization_Studio_v2_7_Browser.html) · [README](../../README.md)
+[HTML](https://github.com/RDunbar01/Nexus-Adapter-Studio/blob/main/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html) · [README](https://github.com/RDunbar01/Nexus-Adapter-Studio/blob/main/README.md)
 
 HTTPS 또는 지원되는 보안 localhost 출처에서 WebGPU 호환 브라우저를 사용하세요. 단일 HTML 파일에 자체 JavaScript/WGSL 엔진이 포함됩니다. 지원되는 로컬 파일을 가져오세요. Python, PyTorch, 네이티브 서비스, 온라인 데이터셋 다운로드, 네이티브 GPU 측정 정보는 제공되지 않으며 실행 중 네트워크 요청은 차단됩니다. GitHub의 소스 보기 화면에서는 앱이 실행되지 않습니다.
 
 ### 설치형 에디션
 
-릴리스 ZIP 전체를 압축 해제하고 설치 프로그램과 모든 데이터 조각의 배치를 유지하세요. 배포되는 각 구성 요소는 20,000,000바이트 미만이어야 하지만, 복원된 파일과 다운로드한 모델은 더 클 수 있습니다. 해당 버전의 패키지 명세와 설치 요약을 따르세요. 네이티브 PyTorch 설정과 테스트는 설치형 에디션에만 해당하며 HTML 단독 에디션의 기능이 아닙니다.
+[2.7.0 패키지](https://github.com/RDunbar01/Nexus-Adapter-Studio/tree/main/releases/2.7.0)의 모든 파일을 제공된 배치 그대로 함께 다운로드하세요. 번호가 있는 모든 `.nxd` 데이터 파트를 [Start_Nexus.py](https://github.com/RDunbar01/Nexus-Adapter-Studio/blob/main/releases/2.7.0/Start_Nexus.py) 옆에 두고 지원되는 Python으로 `python Start_Nexus.py`를 실행하세요. 확인하기 전에 [해당 가이드](https://github.com/RDunbar01/Nexus-Adapter-Studio/blob/main/releases/2.7.0/README.md)와 설치 요약을 읽으세요. 각 `.nxd` 파트는 **10,000,000바이트 이하**이며 설치 전 개별 배포 파일은 **20,000,000바이트 미만**입니다. 전체 압축 파일, 복원된 앱, 설치된 파일과 다운로드한 모델은 더 클 수 있습니다. 다른 릴리스를 섞지 마세요. 네이티브 PyTorch 설정과 테스트는 설치형 에디션에만 해당하며 HTML 단독 체험판의 기능이 아닙니다.
 
 ## 측정 결과와 한계
 
@@ -49,3 +49,4 @@ Rich Dunbar / Nexus Emerging Technology가 AI 지원 코딩으로 개발했습�
 ## 현재 릴리스 라이선스
 
 이 Nexus 릴리스는 Apache License 2.0으로 제공되지 않습니다. Nexus가 권리를 보유한 소프트웨어는 개인적이고 비상업적인 목적으로만 사용할 수 있습니다. 상업적 이용을 포함한 그 밖의 이용, 수정 또는 재배포에는 권리자의 명시적인 서면 동의가 필요합니다. 제3자 코드, 모델, 데이터 세트 및 별도로 라이선스된 구성 요소에는 각자의 라이선스와 고지가 계속 적용됩니다. 이미 부여된 권리와 법적으로 제한할 수 없는 권리는 변경되지 않습니다.
+
