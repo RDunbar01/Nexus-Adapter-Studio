@@ -1,10 +1,10 @@
 # Nexus Adapter Optimization Studio
 
-## [Try in your browser](<https://rdunbar01.github.io/Nexus-Adapter-Studio/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html>) · pending activation
+## [Try in your browser](<https://rdunbar01.github.io/Nexus-Adapter-Studio/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html>) · live browser trial
 
-**Pages is not activated or verified for this release yet.** The link above is its planned HTTPS launch address, not a claim that a live trial is available. The exact [single-file HTML](./Nexus_Adapter_Optimization_Studio_v2_7_Browser.html) is in the repository root; GitHub's source viewer does not execute it.
+**The browser trial is live on GitHub Pages.** The exact link above was opened and its trial interface verified on 22 October 2026. This confirms page availability, not full-model execution or physical GPU qualification. The exact [single-file HTML](./Nexus_Adapter_Optimization_Studio_v2_7_Browser.html) is in the repository root; GitHub's source viewer does not execute it.
 
-Once published, open the link and choose **Check WebGPU adapter** to inspect the interface and browser capability. The first-10-seconds goal is to reach the UI and check capability, not to download a model, finish training or guarantee inference. Load time depends on your connection and device.
+Open the link and choose **Check WebGPU adapter** to inspect the interface and browser capability. The first-10-seconds goal is to reach the UI and check capability, not to download a model, finish training or guarantee inference. Load time depends on your connection and device.
 
 **Browser trial: no Python required. Native PyTorch backend: full download required.** Download every component in [releases/2.7.0](releases/2.7.0/), not just the HTML or installer. The browser does not contain or run Python/PyTorch. See [Python and native runtime requirements](#python-and-native-runtime-requirements).
 
@@ -13,7 +13,7 @@ Once published, open the link and choose **Check WebGPU adapter** to inspect the
 This Nexus release is not offered under Apache License 2.0. Nexus-owned software may be used only for personal, non-commercial purposes. Any other use, including commercial use, modification or redistribution, requires express written consent from the rights holder. Third-party code, models, datasets and separately licensed components retain their own licenses and notices. Previously granted rights and rights that cannot lawfully be restricted remain unchanged.
 
 
-> The reviewed source and installer components are published on the main branch, including the self-contained browser HTML. GitHub Pages activation is separate and remains pending. Native Windows/Radeon qualification remains pending.
+> The reviewed source and installer components are published on the main branch, including the self-contained browser HTML. The browser trial linked above is published on GitHub Pages. Native Windows/Radeon qualification remains pending.
 
 **Version 2.7.0 · published source and installer components · experimental software**
 
@@ -33,7 +33,7 @@ A WebGPU API or adapter check is not a successful arithmetic test, a model-fit r
 
 The complete installer component set is in [releases/2.7.0](releases/2.7.0/). Download every file in that directory together, preserving subdirectories. Keep all numbered data parts beside [Start_Nexus.py](releases/2.7.0/Start_Nexus.py), then run `python Start_Nexus.py` with a supported Python interpreter. Read the [package guide](releases/2.7.0/README.md) before confirming installation. Each distributed data part is at most 10,000,000 bytes; the reconstructed application can be larger. Do not mix releases.
 
-Final packaging and isolated extraction checks passed independent review. Physical Windows, WebView2 and Radeon runtime qualification remains pending; no hardware acceptance or live deployment is claimed.
+Final packaging and isolated extraction checks passed independent review. Physical Windows, WebView2 and Radeon runtime qualification remains pending; no hardware acceptance or full-model qualification is claimed.
 
 ## Python and native runtime requirements
 
