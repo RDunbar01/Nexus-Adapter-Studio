@@ -1,5 +1,21 @@
 # Nexus Adapter Optimization Studio — 홈
 
+## [브라우저에서 체험하기](<https://rdunbar01.github.io/Nexus-Adapter-Studio/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html>) · 활성화 대기 중
+
+이 릴리스의 Pages는 아직 활성화되거나 검증되지 않았습니다. 이 링크는 예정된 HTTPS 실행 주소이며 현재 제공되는 체험판이 아닙니다. GitHub에서 HTML 소스를 보는 것만으로 앱이 실행되지는 않습니다.
+
+게시 후 링크를 열고 **Check WebGPU adapter**를 선택하세요. 처음 10초의 목표는 UI와 브라우저 기능을 확인하는 것이며, 모델 다운로드 완료나 학습·추론을 보장하는 것이 아닙니다. 로딩 시간은 연결 상태와 기기에 따라 달라집니다.
+
+**HTML 체험판에는 Python이 필요하지 않습니다. 네이티브 PyTorch 백엔드에는 전체 다운로드가 필요합니다.** 같은 릴리스의 Python 설치 프로그램과 모든 데이터 조각을 함께 보관하세요. HTML 안에서 Python이나 PyTorch는 실행되지 않습니다. WebGPU 지원, 로컬 입력 파일 및 모델 호환성 확인은 별도로 필요합니다.
+
+## Python 및 네이티브 실행 환경 요구 사항
+
+- **권장 인터프리터는 표준 64비트 CPython 3.12입니다.** 설치 프로그램은 **Python 3.11–3.14**를 안내하지만 부트스트랩 자체가 이 범위를 강제하지는 않습니다. 다른 버전에서 설치 화면이 열린다고 네이티브 백엔드 호환성이 입증되는 것은 아닙니다.
+- **새 AMD 런타임 설치에는 Windows 11 25H2의 표준 64비트 CPython 3.11–3.14가 필요하며 free-threaded 빌드는 제외됩니다.** 기존 런타임은 이 설치 조건 검사 전에 테스트되며 런타임 검사를 통과해야만 재사용됩니다. 해당 Python은 설치된 PyTorch wheel과 일치해야 합니다. 더 넓은 Python 버전 호환성을 인증하지 않습니다.
+- 포함된 네이티브 검사는 **PyTorch 2.14.0+rocm10.1.0**, HIP, 설정된 RX 7900 XT/XTX를 요구하며 FP32 순전파·역전파 결과가 유한한지 확인합니다. 이 패키지는 Python, AMD 드라이버 또는 컴파일러 필수 구성 요소를 설치하거나 변경하지 않습니다. [AMD 공식 호환성 표](https://rocm.docs.amd.com/en/latest/compatibility/compatibility-matrix.html)를 확인하세요.
+
+이는 설치 프로그램과 런타임의 조건이며 실제 Windows, WebView2, Radeon 또는 전체 모델 검증이 완료되었다는 뜻이 아닙니다. 검사 통과가 모든 정밀도, 컴파일 모드 또는 작업을 검증하지는 않습니다.
+
 **2.7.0 · 한국어**
 
 이 페이지는 다음 릴리스를 위한 검토용 Wiki 원고입니다. 공개 Wiki나 브라우저 체험판이 이미 게시되었다는 뜻은 아닙니다.
