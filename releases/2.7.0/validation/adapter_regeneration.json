@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "adapter_output": "Nexus_AOS_v2_7_0.zip",
+  "adapter_generated_footer": "Release 2.7.0",
+  "guide_body_byte_identical_to_baseline": true,
+  "other_product_guides_unchanged": [
+    "README_suite.docx",
+    "README_benchmark.docx",
+    "README_foundry.docx",
+    "README_recovery.docx"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "product": "Nexus Adapter Optimization Studio",
+  "version": "2.7.0",
+  "stage": "local next-version staging; not published",
+  "source_manifest": "RELEASE_SOURCE_SHA256.json inside payload",
+  "validation": "See RELEASE_VALIDATION.json",
+  "physical_windows_radeon_tested": false
+}

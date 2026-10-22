@@ -1,0 +1,10 @@
+{
+  "product": "Nexus Adapter Optimization Studio",
+  "version": "2.7.0",
+  "installer": "Start_Nexus.py",
+  "alias": "installer.py",
+  "nativePayloadSHA256": "cd5efda6ce356977283f3a2b654bc1e35124e4cf096820e14ed0b63a3b4392a5",
+  "dataPartCount": 2,
+  "largestDistributedNativeComponentBytes": 10000000,
+  "scope": "Native installer payload metadata only; full ZIP checksum is in external release handoff."
+}
