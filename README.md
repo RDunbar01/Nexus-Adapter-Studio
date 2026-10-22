@@ -13,9 +13,9 @@ Once published, open the link and choose **Check WebGPU adapter** to inspect the
 This Nexus release is not offered under Apache License 2.0. Nexus-owned software may be used only for personal, non-commercial purposes. Any other use, including commercial use, modification or redistribution, requires express written consent from the rights holder. Third-party code, models, datasets and separately licensed components retain their own licenses and notices. Previously granted rights and rights that cannot lawfully be restricted remain unchanged.
 
 
-> Complete independently reviewed installer components and self-contained browser HTML are staged in this draft PR. This is not a published GitHub Release or live Pages deployment. Native Windows/Radeon qualification remains pending.
+> The reviewed source and installer components are published on the main branch, including the self-contained browser HTML. GitHub Pages activation is separate and remains pending. Native Windows/Radeon qualification remains pending.
 
-**Version 2.7.0 · next-release staging · experimental software**
+**Version 2.7.0 · published source and installer components · experimental software**
 
 Train and evaluate experimental adapters for admitted models using your own local corpus.
 
@@ -53,7 +53,7 @@ The source handoff passed recorded CPU regression and frontend checks. Browser e
 
 Developed by Rich Dunbar / Nexus Emerging Technology using AI-assisted coding and an iterative build–measure–learn process. Existing repository licenses and third-party notices remain authoritative. Model, dataset and upstream-code terms apply separately; this README grants no new reuse rights.
 
-[Previous README, including original research citations and credits](docs/README_PREVIOUS.md). Historical release details there are not claims about this staged edition.
+[Previous README, including original research citations and credits](docs/README_PREVIOUS.md). Historical release details there are not claims about this edition.
 
 ## Wiki source
 
