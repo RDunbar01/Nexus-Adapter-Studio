@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "version": "2.7.1",
+  "actualInstallerExtraction": true,
+  "inventoryChecked": 436,
+  "sourceInventoryChecked": 435,
+  "largestInnerComponentBytes": 8089430,
+  "parts": [
+    {
+      "name": "Nexus_payload.001.nxd",
+      "bytes": 10000000,
+      "sha256": "d8ef8aa4c42bfe9bbf4b04d6f445f07b7c3451363190215b3a8e53f16189f93b"
+    },
+    {
+      "name": "Nexus_payload.002.nxd",
+      "bytes": 9376787,
+      "sha256": "6b79372f351346077ad23336b26c5c45a56eba84a8ffbb437900530d88fcfadf"
+    }
+  ],
+  "htmlByteIdenticalRebuild": {
+    "Nexus_Adapter_Optimization_Studio.html": "51b0ea20ab5fa1d2c0a9f7bf774800053880beb6daf03459e0d94717b0e5c50c",
+    "Nexus_Adapter_Benchmark.html": "d292f216a5e1323f5edb8b61eab58d5aeaa3256672cfda9b7fe6ad63bce7fc62"
+  },
+  "installedService": {
+    "status": "PASS",
+    "real_extracted_service_started": true,
+    "device": "cpu",
+    "threads": 1,
+    "unauthenticated_status": 401,
+    "one_use_cookie_handshake": true,
+    "authenticated_pages": {
+      "Nexus_Adapter_Optimization_Studio.html": "51b0ea20ab5fa1d2c0a9f7bf774800053880beb6daf03459e0d94717b0e5c50c",
+      "Nexus_Adapter_Benchmark.html": "d292f216a5e1323f5edb8b61eab58d5aeaa3256672cfda9b7fe6ad63bce7fc62"
+    },
+    "removed_recovery_routes": 404,
+    "default_page": "Nexus_Adapter_Optimization_Studio.html",
+    "no_training_or_browser_launch": true,
+    "owned_service_graceful_exit": true
+  },
+  "windowsRadeonTested": false
+}

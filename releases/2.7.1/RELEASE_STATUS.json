@@ -1,0 +1,7 @@
+{
+  "product": "Nexus Adapter Optimization Studio",
+  "version": "2.7.1",
+  "scope": "Purple presentation and responsive project/model labels. Existing inference and training engines retained.",
+  "validation": "See RELEASE_VALIDATION.json",
+  "physical_windows_radeon_tested": false
+}

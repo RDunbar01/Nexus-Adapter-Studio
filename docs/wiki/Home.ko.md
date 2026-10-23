@@ -1,3 +1,17 @@
+# 현재 릴리스 2.7.1
+
+[브라우저에서 실행](https://rdunbar01.github.io/Nexus-Adapter-Studio/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html) · [전체 설치 구성 파일](https://github.com/RDunbar01/Nexus-Adapter-Studio/tree/main/releases/2.7.1) · [릴리스 노트](https://github.com/RDunbar01/Nexus-Adapter-Studio/blob/main/docs/CHANGELOG_2.7.1.md)
+
+어댑터 확인은 **Settings → Browser trial · diagnostics and license → Check WebGPU adapter** 에서 실행합니다。
+
+설치형 앱과 브라우저 버전의 색상, 로고, 아이콘을 보라색 계열로 통일했습니다. 프로젝트와 모델 레이블을 입력란 위에 배치하고 긴 프로젝트 이름과 파일명이 가용 너비에 맞게 표시되도록 했습니다. 옵티마이저, 커널, 모델 적합성 검사와 학습 동작은 변경하지 않았습니다.
+
+현재 브라우저 버전과 설치형 버전에는 동일한 UI 변경이 포함됩니다. 전체 ZIP에는 설치 프로그램과 모든 데이터 파일이 포함되므로 함께 보관하세요. 데이터 파일은 각각 최대 10,000,000바이트이며 개별 배포 구성 요소는 20,000,000바이트 미만입니다. 이 UI 업데이트는 지원 모델을 추가하거나 실제 Windows/Radeon 하드웨어 검증을 입증하지 않습니다.
+
+Nexus 소유 자료의 개인 사용과 내부 상업적 테스트 및 평가는 허용됩니다. 배포, 수정, 프로덕션 배포 및 기타 상업적 사용에는 명시적인 서면 동의가 필요합니다. 타사 라이선스와 기존에 부여된 권리는 그대로 유지됩니다. [평가 허가](https://github.com/RDunbar01/Nexus-Adapter-Studio/blob/main/COMMERCIAL_EVALUATION_PERMISSION.md).
+
+## 이전 릴리스 설명 (변경 없이 보존)
+
 # Nexus Adapter Optimization Studio
 
 **Version 2.7.0**

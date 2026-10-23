@@ -1,6 +1,6 @@
 # Additional permission for this release
 
-Personal use and internal commercial testing and evaluation are permitted for Nexus-owned material in Nexus Adapter Optimization Studio 2.7.0 and its 2.7 browser trial. See [COMMERCIAL_EVALUATION_PERMISSION.md](COMMERCIAL_EVALUATION_PERMISSION.md) for the additional permission and its limits. For the permitted testing and evaluation, that permission takes precedence over a conflicting personal-use-only statement below. All other terms and separately licensed rights remain unchanged.
+Personal use and internal commercial testing and evaluation are permitted for Nexus-owned material in Nexus Adapter Optimization Studio 2.7.0 and its 2.7 browser trial, and Nexus Adapter Optimization Studio 2.7.1 and its 2.7.1 native and browser editions. See [COMMERCIAL_EVALUATION_PERMISSION.md](COMMERCIAL_EVALUATION_PERMISSION.md) for the additional permission and its limits. For the permitted testing and evaluation, that permission takes precedence over a conflicting personal-use-only statement below. All other terms and separately licensed rights remain unchanged.
 
 ## Original scope and historical notices
 

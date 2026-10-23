@@ -1,0 +1,21 @@
+/* AOS 2.7.1: shared presentation only. No inference or training changes. */
+:root{--nx-purple:#d893ff;--nx-purple-deep:#8b45b8;--nx-purple-glass:#291438b8;--nx-purple-border:#bd87e466;--accent:var(--nx-purple);--nx-neon:#db69ff}
+#nxGPUSetup{min-width:0;max-width:100%;border:1px solid var(--nx-purple-border);background:var(--nx-purple-glass);border-radius:16px;margin:16px 0;padding:18px;backdrop-filter:blur(22px)}
+#nxGPUSetup legend,#nxGPUStatus{white-space:normal;overflow-wrap:anywhere;max-width:100%}
+#nxGPUSetup button{margin:8px 8px 8px 0;max-width:100%;white-space:normal}
+#nxGPUSetup select{border-color:var(--nx-purple-border)}
+#nxQuestion,.nxStep,.nxStep>label,#nxSettings,.nxSettingsGrid>*{min-width:0;max-width:100%}
+/* A label and its input must never share the same inline line box. */
+#nxQuestion .nxStep>label{display:flex;flex-direction:column;align-items:stretch;gap:8px;width:100%;margin:20px 0 12px;white-space:normal;overflow-wrap:anywhere}
+#nxQuestion .nxStep>label>span{display:block;min-width:0;max-width:100%;line-height:1.6;white-space:normal;overflow-wrap:anywhere}
+#nxQuestion .nxStep>label>input,#nxQuestion .nxStep>label>select,#nxQuestion .nxStep>label>textarea{display:block;box-sizing:border-box;width:100%;max-width:100%;min-width:0;margin:0}
+#nxQuestion input[type=file]{overflow:hidden;text-overflow:ellipsis}
+#nxQuestion input[type=file]::file-selector-button{max-width:100%;white-space:normal}
+#nxModelFilename,#modelInfo,#compatibilityInfo,#nxBaseStorageReport,#nxProjects p,#nxProjects h2,#nxProjects h3,#nxProjects button,#nxReview{max-width:100%;min-width:0;overflow-wrap:anywhere;word-break:normal;white-space:pre-wrap}
+#nxModelFilename:empty{display:none}#nxModelFilename{color:var(--muted);font-size:12px;line-height:1.7;margin:8px 0 16px;unicode-bidi:plaintext}
+#nxProjects .row{min-width:0}#nxProjects .row>*{min-width:0;max-width:100%}
+#nxRain{pointer-events:none}progress{accent-color:var(--nx-purple)}
+.nxRail progress::-webkit-progress-value{background:linear-gradient(90deg,var(--nx-purple-deep),var(--nx-purple))}
+.nxRail progress::-moz-progress-bar{background:linear-gradient(90deg,var(--nx-purple-deep),var(--nx-purple))}
+aside>strong{display:flex;align-items:center;gap:12px;min-width:0}aside>strong>.nexusProductBadge{margin-right:0;width:48px;height:48px}
+@media(max-width:480px){aside{grid-template-columns:minmax(0,1fr)}#nxSideTools{grid-column:1/-1}main{padding-inline:14px}.nxQuestion{padding:20px}.nxActions button{min-width:0;max-width:100%;white-space:normal}.nxRail{flex-wrap:wrap}.nxRail progress{min-width:120px}aside nav{grid-template-columns:repeat(2,minmax(0,1fr))}}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS within available scope; final archive review recorded externally",
+  "product_version": "2.7.1",
+  "tests": {
+    "native_cpu_adapter_regressions": 46,
+    "native_generated_dom_apps": 2,
+    "purple_label_and_filename_dom_apps": 2,
+    "first_visit_and_settings_dom_studios": 3,
+    "inline_script_syntax": {
+      "native_studio": 5,
+      "native_benchmark": 5,
+      "browser": 6
+    },
+    "native_scope_security_installer_regressions": 36
+  },
+  "changes": "Presentation only: shared purple palette, vector and native icon assets, stacked project/model labels and responsive long text. Stable native motion preference key retained.",
+  "hardware_qualified": false,
+  "full_debug_guarantee": false,
+  "limits": [
+    "No physical Windows/Radeon test.",
+    "Local Chromium launch unavailable; DOM tests are not pixel/geometry verification.",
+    "Historical qualification files retain their original scope and are not new hardware evidence."
+  ],
+  "distribution_limits": {
+    "data_part_max_bytes": 10000000,
+    "individual_component_strict_max_bytes": 20000000
+  },
+  "license": "See current LICENSE plus COMMERCIAL_EVALUATION_PERMISSION.md; third-party and prior rights preserved."
+}
