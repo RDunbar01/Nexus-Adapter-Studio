@@ -1,0 +1,12 @@
+{
+  "file": "Nexus_Adapter_Optimization_Studio_v2_7_Browser.html",
+  "bytes": 8011206,
+  "sha256": "129f73f47005e26b02d6c8bbe6bfc29a302cd5802b49d48cea807bfa7275d65f",
+  "git_blob_sha": "cb219fc3c88e05be062ff884189af83cce51c68e",
+  "change": "Commercial testing and evaluation notice and linked permission only. Browser computation and native release payload are unchanged.",
+  "checks": {
+    "static_dependency_and_network_policy": "passed",
+    "full_dom_regression": "passed",
+    "physical_gpu_execution": "not_run"
+  }
+}

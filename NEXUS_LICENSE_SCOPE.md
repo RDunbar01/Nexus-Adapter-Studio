@@ -1,3 +1,9 @@
+# Additional permission for this release
+
+Personal use and internal commercial testing and evaluation are permitted for Nexus-owned material in Nexus Adapter Optimization Studio 2.7.0 and its 2.7 browser trial. See [COMMERCIAL_EVALUATION_PERMISSION.md](COMMERCIAL_EVALUATION_PERMISSION.md) for the additional permission and its limits. For the permitted testing and evaluation, that permission takes precedence over a conflicting personal-use-only statement below. All other terms and separately licensed rights remain unchanged.
+
+## Original scope and historical notices
+
 # Current release scope and third-party notices
 
 This Nexus release is not offered under Apache License 2.0. Nexus-owned software may be used only for personal, non-commercial purposes. Any other use, including commercial use, modification or redistribution, requires express written consent from the rights holder. Third-party code, models, datasets and separately licensed components retain their own licenses and notices. Previously granted rights and rights that cannot lawfully be restricted remain unchanged.
@@ -23,3 +29,4 @@ training-data, patent, trademark, privacy or other rights. Review the actual
 intended distribution and use separately.
 
 The exact previous root license is preserved at docs/licenses/LICENSE_PREVIOUS for earlier and separately licensed material. Historical permissions remain unchanged.
+

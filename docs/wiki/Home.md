@@ -1,12 +1,33 @@
-# Nexus Adapter Optimization Studio — Home
+# Nexus Adapter Optimization Studio
 
-## [Try in your browser](<https://rdunbar01.github.io/Nexus-Adapter-Studio/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html>) · published browser entry
+**Version 2.7.0**
 
-The HTTPS browser entry is published and its initial screen has been checked. This is not full WebGPU, Windows or Radeon workload qualification. GitHub’s HTML source viewer does not execute the application.
+Train and evaluate experimental adapters for supported local language models using your own corpus.
 
-Open the link and choose **Check WebGPU adapter**. The first-10-seconds goal is to inspect the UI and capability, not to download a model or guarantee training/inference. Loading depends on the connection and device.
+**[Try in your browser](https://rdunbar01.github.io/Nexus-Adapter-Studio/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html)** · [Download the desktop components](https://github.com/RDunbar01/Nexus-Adapter-Studio/tree/main/releases/2.7.0) · [README](https://github.com/RDunbar01/Nexus-Adapter-Studio/blob/main/README.md)
 
-**No Python is required for the HTML trial. A full download is required for the native PyTorch backend.** Keep the Python installer and every matching data part together. Python and PyTorch do not run in the HTML. WebGPU support, local inputs and model compatibility checks still apply.
+Open the trial to inspect the interface and choose **Check WebGPU adapter**. No Python installation is needed. The aim is a quick first look; loading a model or completing a workload depends on the inputs and device.
+
+Native package 2.7.0; browser edition 2.7.
+
+## What it does
+
+- Local model and corpus inputs for admitted adapter-training workflows.
+- Training and evaluation controls in a browser interface.
+- Architecture, tokenizer, tensor-format and memory checks before supported work.
+- Custom WebGPU trials and a separately installed native PyTorch backend.
+
+## Engineering contribution
+
+A focused local interface for testing model adaptation and evaluating the result. Keeping model admission separate from training helps expose unsupported inputs instead of treating every GGUF file as compatible.
+
+## Why a single HTML file?
+
+The browser edition packages its interface, JavaScript, CSS and WGSL kernels in one HTML file. This makes online trials easy to open, link to and inspect without a build step or runtime CDN. The file contains the browser engine, not model weights or the native PyTorch backend.
+
+Use a compatible WebGPU browser over HTTPS. Runtime network requests, native hardware monitoring and local-server bridges are disabled. Actual training or evaluation requires supported inputs. The native PyTorch backend requires the full download.
+
+[English](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home) · [Français](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home.fr) · [日本語](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home.ja) · [한국어](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home.ko)
 
 ## Python and native runtime requirements
 
@@ -16,11 +37,6 @@ Open the link and choose **Check WebGPU adapter**. The first-10-seconds goal is 
 
 These are installer/runtime conditions, not completed physical Windows, WebView2, Radeon or full-model qualification. A successful probe does not qualify every precision, compilation mode or workload.
 
-**2.7.0 · English**
-
-Published release documentation. See the evidence and limits below.
-
-[English](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home) · [Français](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home.fr) · [日本語](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home.ja) · [한국어](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home.ko)
 
 ## Purpose
 
@@ -42,11 +58,6 @@ Download every file in the [2.7.0 package](https://github.com/RDunbar01/Nexus-Ad
 
 CPU regression and static/DOM checks are not physical Windows/Radeon/WebGPU validation. Compare only equivalent model, corpus, context, batch, precision and backend conditions. Training/recovery, prompt processing and token generation rates are different measurements. No universal compatibility or maximum speed is guaranteed.
 
-## Credits and licensing
+## Use and attribution
 
-Rich Dunbar / Nexus Emerging Technology, developed with AI-assisted coding. Existing licenses and third-party research, code, model and dataset terms remain in force. This page grants no additional license.
-
-## Current release licensing
-
-This Nexus release is not offered under Apache License 2.0. Nexus-owned software may be used only for personal, non-commercial purposes. Any other use, including commercial use, modification or redistribution, requires express written consent from the rights holder. Third-party code, models, datasets and separately licensed components retain their own licenses and notices. Previously granted rights and rights that cannot lawfully be restricted remain unchanged.
-
+Rich Dunbar / Nexus Emerging Technology. Personal use and internal commercial testing and evaluation are permitted for Nexus-owned material. Distribution, modification, production deployment and other commercial use require express written consent. Third-party licenses and previously granted rights remain unchanged. [license](https://github.com/RDunbar01/Nexus-Adapter-Studio/blob/main/LICENSE) · [evaluation permission (English)](https://github.com/RDunbar01/Nexus-Adapter-Studio/blob/main/COMMERCIAL_EVALUATION_PERMISSION.md).
