@@ -1,12 +1,33 @@
-# Nexus Adapter Optimization Studio — Accueil
+# Nexus Adapter Optimization Studio
 
-## [Essayer dans le navigateur](<https://rdunbar01.github.io/Nexus-Adapter-Studio/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html>) · accès navigateur publié
+**Version 2.7.0**
 
-La page HTTPS est publiée et son écran initial a été vérifié. Cela ne constitue pas une qualification complète des charges WebGPU, Windows ou Radeon. L’affichage du HTML dans GitHub n’exécute pas l’application.
+Entraîner et évaluer des adaptateurs expérimentaux pour les modèles de langage locaux pris en charge, avec votre propre corpus.
 
-Ouvrez le lien et choisissez **Check WebGPU adapter**. L’objectif des dix premières secondes est d’examiner l’interface et les capacités du navigateur, pas de télécharger un modèle ni de garantir l’entraînement ou l’inférence. Le chargement dépend de la connexion et de l’appareil.
+**[Essayer dans le navigateur](https://rdunbar01.github.io/Nexus-Adapter-Studio/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html)** · [Télécharger les composants de bureau](https://github.com/RDunbar01/Nexus-Adapter-Studio/tree/main/releases/2.7.0) · [README](https://github.com/RDunbar01/Nexus-Adapter-Studio/blob/main/README.md)
 
-**L’essai HTML ne nécessite pas Python. Le moteur PyTorch natif exige le téléchargement complet.** Gardez l’installateur Python et toutes les parties de données de la même version ensemble. Python et PyTorch ne s’exécutent pas dans le HTML. La prise en charge de WebGPU, les fichiers locaux et les contrôles de compatibilité du modèle restent nécessaires.
+Ouvrez la version d’essai pour examiner l’interface et choisissez **Check WebGPU adapter**. Aucune installation de Python n’est nécessaire. L’objectif est un premier aperçu rapide ; le chargement d’un modèle et l’exécution d’une tâche dépendent des données et de l’appareil.
+
+Paquet natif 2.7.0 ; édition navigateur 2.7.
+
+## Fonctionnalités
+
+- Entrées locales de modèles et de corpus pour les parcours d’entraînement d’adaptateurs admis.
+- Commandes d’entraînement et d’évaluation dans une interface navigateur.
+- Vérification de l’architecture, du tokenizer, du format des tenseurs et de la mémoire avant les opérations prises en charge.
+- Essais WebGPU personnalisés et backend PyTorch natif installé séparément.
+
+## Contribution technique
+
+Une interface locale ciblée pour tester l’adaptation d’un modèle et en évaluer le résultat. Séparer l’admission du modèle de l’entraînement permet de signaler les entrées non prises en charge, plutôt que de considérer tout fichier GGUF comme compatible.
+
+## Pourquoi un seul fichier HTML ?
+
+L’édition navigateur réunit l’interface, JavaScript, CSS et les noyaux WGSL dans un seul fichier HTML. Ce choix facilite les essais en ligne, le partage du lien et l’inspection, sans compilation ni CDN à l’exécution. Le fichier contient le moteur navigateur, pas les poids des modèles ni le backend PyTorch natif.
+
+Utilisez un navigateur compatible WebGPU en HTTPS. Les requêtes réseau à l’exécution, la surveillance matérielle native et les passerelles vers un serveur local sont désactivées. L’entraînement ou l’évaluation exige des entrées prises en charge. Le backend PyTorch natif nécessite le téléchargement complet.
+
+[English](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home) · [Français](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home.fr) · [日本語](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home.ja) · [한국어](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home.ko)
 
 ## Versions de Python et environnement natif
 
@@ -16,11 +37,6 @@ Ouvrez le lien et choisissez **Check WebGPU adapter**. L’objectif des dix prem
 
 Ces conditions ne constituent pas une validation sur matériel Windows, WebView2 ou Radeon réel, ni une qualification du modèle complet. Un test réussi ne valide pas toutes les précisions, compilations ou charges de travail.
 
-**2.7.0 · Français**
-
-Documentation de la version publiée. Consultez les preuves et limites ci-dessous.
-
-[English](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home) · [Français](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home.fr) · [日本語](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home.ja) · [한국어](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki/Home.ko)
 
 ## Objectif
 
@@ -42,11 +58,6 @@ Téléchargez ensemble tous les fichiers du [paquet 2.7.0](https://github.com/RD
 
 Les tests CPU et les contrôles statiques/DOM ne valident pas l’exécution sur du matériel Windows/Radeon/WebGPU réel. Comparez uniquement des conditions équivalentes : modèle, corpus, contexte, lot, précision et moteur. Les débits d’entraînement, de récupération, de traitement des invites et de génération sont des mesures différentes. Aucune compatibilité universelle ni vitesse maximale n’est garantie.
 
-## Crédits et licences
+## Utilisation et attribution
 
-Rich Dunbar / Nexus Emerging Technology, avec l’aide d’outils de codage par IA. Les licences existantes et les conditions applicables aux recherches, au code, aux modèles et aux données tiers restent en vigueur. Cette page n’accorde aucune licence supplémentaire.
-
-## Licence de la version actuelle
-
-Cette version de Nexus n’est pas proposée sous la licence Apache 2.0. Le logiciel appartenant à Nexus ne peut être utilisé qu’à des fins personnelles et non commerciales. Toute autre utilisation, y compris commerciale, ainsi que toute modification ou redistribution, nécessite le consentement écrit exprès du titulaire des droits. Les codes, modèles, jeux de données tiers et composants sous licence distincte conservent leurs propres licences et mentions. Les droits déjà accordés et les droits qui ne peuvent légalement être restreints restent inchangés.
-
+Rich Dunbar / Nexus Emerging Technology. L’usage personnel ainsi que les tests et évaluations commerciaux internes sont autorisés pour les éléments appartenant à Nexus. La distribution, la modification, le déploiement en production et les autres usages commerciaux nécessitent un consentement écrit exprès. Les licences tierces et les droits déjà accordés restent inchangés. [licence](https://github.com/RDunbar01/Nexus-Adapter-Studio/blob/main/LICENSE) · [autorisation d’évaluation (en anglais)](https://github.com/RDunbar01/Nexus-Adapter-Studio/blob/main/COMMERCIAL_EVALUATION_PERMISSION.md).

@@ -1,60 +1,46 @@
 # Nexus Adapter Optimization Studio
 
-## [Try in your browser](<https://rdunbar01.github.io/Nexus-Adapter-Studio/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html>) · live browser trial
+**Version 2.7.0**
 
-**The browser trial is live on GitHub Pages.** The exact link above was opened and its trial interface verified on 22 October 2026. This confirms page availability, not full-model execution or physical GPU qualification. The exact [single-file HTML](./Nexus_Adapter_Optimization_Studio_v2_7_Browser.html) is in the repository root; GitHub's source viewer does not execute it.
+Train and evaluate experimental adapters for supported local language models using your own corpus.
 
-Open the link and choose **Check WebGPU adapter** to inspect the interface and browser capability. The first-10-seconds goal is to reach the UI and check capability, not to download a model, finish training or guarantee inference. Load time depends on your connection and device.
+**[Try in your browser](https://rdunbar01.github.io/Nexus-Adapter-Studio/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html)** · [Download the desktop components](releases/2.7.0/) · [Wiki](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki)
 
-**Browser trial: no Python required. Native PyTorch backend: full download required.** Download every component in [releases/2.7.0](releases/2.7.0/), not just the HTML or installer. The browser does not contain or run Python/PyTorch. See [Python and native runtime requirements](#python-and-native-runtime-requirements).
+Open the trial to inspect the interface and choose **Check WebGPU adapter**. No Python installation is needed. The aim is a quick first look, not a promise that a model will load or finish a workload in seconds.
 
-## Current release licensing
+## What it does
 
-This Nexus release is not offered under Apache License 2.0. Nexus-owned software may be used only for personal, non-commercial purposes. Any other use, including commercial use, modification or redistribution, requires express written consent from the rights holder. Third-party code, models, datasets and separately licensed components retain their own licenses and notices. Previously granted rights and rights that cannot lawfully be restricted remain unchanged.
+- Local model and corpus inputs for admitted adapter-training workflows.
+- Training and evaluation controls in a browser interface.
+- Architecture, tokenizer, tensor-format and memory checks before supported work.
+- Custom WebGPU trials and a separately installed native PyTorch backend.
 
+## Engineering contribution
 
-> The reviewed source and installer components are published on the main branch, including the self-contained browser HTML. The browser trial linked above is published on GitHub Pages. Native Windows/Radeon qualification remains pending.
+A focused local interface for testing model adaptation and evaluating the result. Keeping model admission separate from training helps expose unsupported inputs instead of treating every GGUF file as compatible.
 
-**Version 2.7.0 · published source and installer components · experimental software**
+## Model requirements
 
-Train and evaluate experimental adapters for admitted models using your own local corpus.
+No base model is bundled. The selected model must match the implemented architecture, tokenizer, tensor format and training graph, and fit the available memory. A familiar model name or a `.gguf` extension alone is not a compatibility check.
 
-A GGUF extension or familiar model-family name does not establish compatibility. Architecture, tokenizer, tensor format, training graph and memory must all pass the application checks. No base model is bundled.
+## Why a single HTML file?
 
-## Browser capabilities and limits
+The browser edition packages its interface, JavaScript, CSS and WGSL kernels in one HTML file. This makes online trials easy to open, share as a link and inspect without a build step or runtime CDN. The monolithic file is a distribution choice for accessible trials, not a claim that every model or native dependency fits inside it.
 
-Explore adapter training/evaluation controls with admitted local models and your own corpus. No base model is bundled; architecture, tokenizer, tensor format and memory checks still apply.
+Use a compatible WebGPU browser over HTTPS. The trial uses the custom browser engine, not PyTorch. Runtime network requests, native hardware monitoring and local-server bridges are disabled. Supply supported local inputs for actual training or evaluation.
 
-Use a compatible WebGPU browser on HTTPS or a supported secure localhost origin. The single file includes its JavaScript, CSS and WGSL kernels without a runtime CDN dependency. Browser GPU work uses the custom JavaScript/WebGPU engine, not PyTorch. Online dataset downloads, server model bridges and native hardware monitoring are unavailable; runtime network requests are blocked. External documentation links open only when selected.
+## Full application and Python
 
-A WebGPU API or adapter check is not a successful arithmetic test, a model-fit result or a performance measurement. Physical Windows 11/Radeon/WebGPU execution remains a separate qualification step.
+**The native PyTorch backend requires the full download.** Get every file in [releases/2.7.0](releases/2.7.0/), keep the numbered data parts beside [Start_Nexus.py](releases/2.7.0/Start_Nexus.py), and run `python Start_Nexus.py`. Review the installation plan before confirming. Do not mix release components.
 
-## Desktop package and installation
+Use standard **64-bit CPython 3.12** for the launcher. The advertised installer range is 3.11–3.14; actual native compatibility also depends on the selected Python/PyTorch runtime and its probe. The new AMD-runtime installation path checks standard, non-free-threaded x64 CPython 3.11–3.14 and Windows 11 25H2; an existing runtime must pass its probe. See the [runtime and validation notes](docs/TECHNICAL_NOTES.md) and [package guide](releases/2.7.0/README.md) for exact conditions. Python, GPU drivers and compilers are not silently replaced.
 
-The complete installer component set is in [releases/2.7.0](releases/2.7.0/). Download every file in that directory together, preserving subdirectories. Keep all numbered data parts beside [Start_Nexus.py](releases/2.7.0/Start_Nexus.py), then run `python Start_Nexus.py` with a supported Python interpreter. Read the [package guide](releases/2.7.0/README.md) before confirming installation. Each distributed data part is at most 10,000,000 bytes; the reconstructed application can be larger. Do not mix releases.
+Each data part is at most 10,000,000 bytes; each individual distribution file is below 20,000,000 bytes. Reconstructed files, installed files and model weights can be larger.
 
-Final packaging and isolated extraction checks passed independent review. Physical Windows, WebView2 and Radeon runtime qualification remains pending; no hardware acceptance or full-model qualification is claimed.
+## Validation
 
-## Python and native runtime requirements
+Recorded CPU regressions, frontend checks and package-integrity checks cover the published sources. Browser launch checks establish that the interface opens; they do not establish full-model correctness or physical Windows/Radeon performance. A WebGPU adapter check is only a capability check.
 
-- **Recommended launcher: standard 64-bit CPython 3.12.** The installer advertises Python **3.11–3.14**, but the bootstrap itself does not enforce that version range. Opening the installer with another version is not evidence that the native backend is compatible.
-- **New AMD runtime installation requires standard, non-free-threaded, 64-bit CPython 3.11–3.14** on Windows 11 **25H2**. Existing runtimes are tested before that installation gate and are reused only when the runtime probe passes; their Python must match their installed PyTorch wheels. No wider Python-version compatibility is certified here.
-- The packaged native probe expects **PyTorch 2.14.0+rocm10.1.0**, HIP and the configured RX 7900 XT/XTX device, then performs a finite FP32 forward/backward check. Python, AMD drivers and compiler prerequisites are not installed or changed by this package. Check the [official AMD compatibility matrix](https://rocm.docs.amd.com/en/latest/compatibility/compatibility-matrix.html) for the exact OS/GPU/driver combination.
+## Use and attribution
 
-These are installer/runtime conditions, not completed physical Windows, WebView2, Radeon or full-model qualification. A successful probe does not qualify every precision, compilation mode or workload.
-
-## Measurement and validation
-
-Native PyTorch tests distinguish synthetic scratch fixtures from loaded-model/corpus workloads. Timed training, evaluation, warm-up/compilation, prompt processing and autoregressive generation are different measurements. Report valid target tokens, elapsed time, model, context, batch size, precision, backend and hardware alongside throughput; do not count padding as useful tokens or describe a CPU result as GPU performance.
-
-The source handoff passed recorded CPU regression and frontend checks. Browser editions passed static/DOM checks, not physical GPU arithmetic or performance qualification. A clean scoped test run does not prove absence of bugs. No maximum speed, universal model support or Windows driver certification is promised.
-
-## Project and licensing
-
-Developed by Rich Dunbar / Nexus Emerging Technology using AI-assisted coding and an iterative build–measure–learn process. Existing repository licenses and third-party notices remain authoritative. Model, dataset and upstream-code terms apply separately; this README grants no new reuse rights.
-
-[Previous README, including original research citations and credits](docs/README_PREVIOUS.md). Historical release details there are not claims about this edition.
-
-## Wiki source
-
-[English](docs/wiki/Home.md) · [Français](docs/wiki/Home.fr.md) · [日本語](docs/wiki/Home.ja.md) · [한국어](docs/wiki/Home.ko.md). These are reviewable repository files, not a claim that the live GitHub Wiki has been published.
+Developed by Rich Dunbar / Nexus Emerging Technology. Personal use and internal commercial testing and evaluation are permitted for Nexus-owned material. Distribution, modification, production deployment and other commercial use require express written consent. Third-party licenses and previously granted rights remain unchanged. See the [license](LICENSE) and [evaluation permission](COMMERCIAL_EVALUATION_PERMISSION.md).
