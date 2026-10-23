@@ -1,20 +1,20 @@
 {
   "file": "Nexus_Adapter_Optimization_Studio_v2_7_Browser.html",
-  "bytes": 8016589,
-  "sha256": "dd339703760286d34c6607710b4b4097da225473ffc9a2e4ca8b43b71eb286f6",
-  "git_blob_sha": "83c0613a6bd1259666d434e2398d71e584a20492",
-  "browserVersion": "2.7",
+  "bytes": 8020093,
+  "sha256": "9c70b6573953d86ded6b233fa95a68dd11ea33050b59cc1606095e4a82ef5fe3",
+  "git_blob_sha": "39d5191ff20c61f1100c2efc8da07dd5626d2c19",
+  "browserVersion": "2.7.1",
   "presentationRevision": 1,
-  "nativeVersion": "2.7.0",
-  "nativePayloadChanged": false,
-  "baseCommit": "f8e25008d3e81fb665964fbb2be59bbb1894e355",
-  "change": "Replace opening trial banner with integrated Settings diagnostics and license; place product logo in actual sidebar. Existing onboarding, consent, engine and local-data paths retained.",
+  "nativeVersion": "2.7.1",
+  "nativePayloadChanged": true,
+  "baseCommit": "862b8463be6ae3fa669ff364ae3ff7b0d58f811e",
+  "change": "Shared purple presentation and responsive project/model fields in browser and new native release. Existing notice, Settings diagnostics, engine and local-data paths retained.",
   "checks": {
     "freshStorageDOM": "passed; explicit notice acceptance only in isolated test fixtures",
     "settingsNavigation": "passed",
     "diagnosticsAndLicense": "passed",
     "runtimeNetworkRequests": 0,
     "physical_gpu_execution": "not_run",
-    "realBrowserRendering": "pending live deployment; local Chromium launch blocked by sandbox socket policy"
+    "realBrowserRendering": "Pending live deployment; local Chromium launch unavailable. DOM regression checks passed."
   }
 }

@@ -1,12 +1,16 @@
 # Nexus Adapter Optimization Studio
 
-**Version 2.7.0**
+**Version 2.7.1**
 
 Train and evaluate experimental adapters for supported local language models using your own corpus.
 
-**[Try in your browser](https://rdunbar01.github.io/Nexus-Adapter-Studio/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html)** · [Download the desktop components](releases/2.7.0/) · [Wiki](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki)
+**[Try in your browser](https://rdunbar01.github.io/Nexus-Adapter-Studio/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html)** · [Download the desktop components](releases/2.7.1/) · [Wiki](https://github.com/RDunbar01/Nexus-Adapter-Studio/wiki)
 
-Open the trial to inspect the interface and choose **Check WebGPU adapter**. No Python installation is needed. The aim is a quick first look, not a promise that a model will load or finish a workload in seconds.
+Open the trial to inspect the interface and open **Settings → Browser trial · diagnostics and license → Check WebGPU adapter**. No Python installation is needed. The aim is a quick first look, not a promise that a model will load or finish a workload in seconds.
+
+## Interface update 2.7.1
+
+Both the installed application and browser edition use the purple palette, matching logo and icons. Project and model labels are stacked, and long project names and filenames fit responsive controls. This is a presentation update; model admission, optimizers, kernels and training behavior are unchanged.
 
 ## What it does
 
@@ -31,11 +35,13 @@ Use a compatible WebGPU browser over HTTPS. The trial uses the custom browser en
 
 ## Full application and Python
 
-**The native PyTorch backend requires the full download.** Get every file in [releases/2.7.0](releases/2.7.0/), keep the numbered data parts beside [Start_Nexus.py](releases/2.7.0/Start_Nexus.py), and run `python Start_Nexus.py`. Review the installation plan before confirming. Do not mix release components.
+**The native PyTorch backend requires the full download.** Get every file in [releases/2.7.1](releases/2.7.1/), keep the numbered data parts beside [Start_Nexus.py](releases/2.7.1/Start_Nexus.py), and run `python Start_Nexus.py`. Review the installation plan before confirming. Do not mix release components.
 
-Use standard **64-bit CPython 3.12** for the launcher. The advertised installer range is 3.11–3.14; actual native compatibility also depends on the selected Python/PyTorch runtime and its probe. The new AMD-runtime installation path checks standard, non-free-threaded x64 CPython 3.11–3.14 and Windows 11 25H2; an existing runtime must pass its probe. See the [runtime and validation notes](docs/TECHNICAL_NOTES.md) and [package guide](releases/2.7.0/README.md) for exact conditions. Python, GPU drivers and compilers are not silently replaced.
+Use standard **64-bit CPython 3.12** for the launcher. The advertised installer range is 3.11–3.14; actual native compatibility also depends on the selected Python/PyTorch runtime and its probe. The new AMD-runtime installation path checks standard, non-free-threaded x64 CPython 3.11–3.14 and Windows 11 25H2; an existing runtime must pass its probe. See the [runtime and validation notes](docs/TECHNICAL_NOTES.md) and [package guide](releases/2.7.1/README.md) for exact conditions. Python, GPU drivers and compilers are not silently replaced.
 
 Each data part is at most 10,000,000 bytes; each individual distribution file is below 20,000,000 bytes. Reconstructed files, installed files and model weights can be larger.
+
+The complete ZIP is named `Nexus_adapter_2.7.1_Full.zip`. Extract it with all supplied installer data parts; do not mix versions. The Git repository also supplies those components separately.
 
 ## Validation
 

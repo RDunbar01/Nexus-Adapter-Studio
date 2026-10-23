@@ -1,3 +1,17 @@
+# Current release 2.7.1
+
+[Open browser trial](https://rdunbar01.github.io/Nexus-Adapter-Studio/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html) · [Full installer components](https://github.com/RDunbar01/Nexus-Adapter-Studio/tree/main/releases/2.7.1) · [Release notes](https://github.com/RDunbar01/Nexus-Adapter-Studio/blob/main/docs/CHANGELOG_2.7.1.md)
+
+For the adapter check, open **Settings → Browser trial · diagnostics and license → Check WebGPU adapter**.
+
+The installed app and browser edition now use a consistent purple palette, logo and icons. Project and model labels are stacked, and long project names and filenames fit responsive controls. Optimizers, kernels, model admission and training behavior are unchanged.
+
+The current browser and native editions have the same UI changes. The complete ZIP contains the installer and all data parts; keep them together. Data parts are at most 10,000,000 bytes, and individual distributed components are below 20,000,000 bytes. This UI patch does not add model support or establish physical Windows/Radeon qualification.
+
+Personal use and internal commercial testing and evaluation are permitted for Nexus-owned material. Distribution, modification, production deployment and other commercial use require express written consent. Third-party licenses and previous grants remain unchanged. [Evaluation permission](https://github.com/RDunbar01/Nexus-Adapter-Studio/blob/main/COMMERCIAL_EVALUATION_PERMISSION.md).
+
+## Previous release notes (retained unchanged)
+
 # Nexus Adapter Optimization Studio
 
 **Version 2.7.0**

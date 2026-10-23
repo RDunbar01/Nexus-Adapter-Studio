@@ -1,0 +1,26 @@
+[
+  {
+    "file": "source/Nexus_Adapter_Optimization_Studio.html",
+    "status": "PASS",
+    "labelStacked": true,
+    "longProjectRetained": true,
+    "fullSelectedModelVisible": true,
+    "cancelClearsFilename": true,
+    "purpleVector": true,
+    "noticePreserved": true,
+    "settingsCycle": true,
+    "layoutEngine": false
+  },
+  {
+    "file": "../browser_trial_work/dist/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html",
+    "status": "PASS",
+    "labelStacked": true,
+    "longProjectRetained": true,
+    "fullSelectedModelVisible": true,
+    "cancelClearsFilename": true,
+    "purpleVector": true,
+    "noticePreserved": true,
+    "settingsCycle": true,
+    "layoutEngine": false
+  }
+]

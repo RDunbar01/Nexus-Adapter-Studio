@@ -1,0 +1,39 @@
+ADDITIONAL PERMISSION FOR THIS RELEASE
+
+Personal use and internal commercial testing and evaluation are permitted for Nexus-owned material in Nexus Adapter Optimization Studio 2.7.0 and its 2.7 browser trial, and Nexus Adapter Optimization Studio 2.7.1 and its 2.7.1 native and browser editions. See COMMERCIAL_EVALUATION_PERMISSION.md for the additional permission and its limits. For the permitted testing and evaluation, that permission takes precedence over a conflicting personal-use-only statement below. All other terms and separately licensed rights remain unchanged.
+
+ORIGINAL PERSONAL-USE TERMS
+
+NEXUS PERSONAL-USE LICENSE
+
+Project attribution: Rich Dunbar / Nexus Emerging Technology.
+
+This Nexus release is not offered under Apache License 2.0. Nexus-owned software may be used only for personal, non-commercial purposes. Any other use, including commercial use, modification or redistribution, requires express written consent from the rights holder. Third-party code, models, datasets and separately licensed components retain their own licenses and notices. Previously granted rights and rights that cannot lawfully be restricted remain unchanged.
+
+PERMISSION AND LIMITS
+Permission is granted to an individual to download, install, run and make
+copies reasonably necessary for that individual's personal, non-commercial
+use of the Nexus-owned material in this release. No permission for any
+other use, modification or redistribution is granted without express written
+consent from the rights holder. Commercial, business and organizational use
+are not covered by the personal-use permission.
+
+SCOPE AND PRESERVED RIGHTS
+This license applies only to material the Nexus rights holder owns or is
+authorized to license. It does not assert ownership of, change, or add
+restrictions to third-party code, models, datasets, fonts, images,
+dictionaries, firmware, runtimes or other separately licensed material.
+Retain accompanying upstream licenses, attribution and modification notices.
+
+Nothing here revokes or limits rights previously granted for any material,
+including earlier releases, or rights that cannot lawfully be restricted.
+Separately licensed components remain subject to their own terms.
+
+This is a proprietary/source-available personal-use license, not an
+OSI-approved open-source license and not an Apache license with added
+restrictions. Source availability alone grants no additional permissions.
+Rights not expressly granted here or otherwise available under applicable
+law or separately applicable licenses are reserved.
+
+Current release: adapter 2.7.1.
+

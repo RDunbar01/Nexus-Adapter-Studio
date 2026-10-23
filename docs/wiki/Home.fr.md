@@ -1,3 +1,17 @@
+# Version actuelle 2.7.1
+
+[Essayer dans le navigateur](https://rdunbar01.github.io/Nexus-Adapter-Studio/Nexus_Adapter_Optimization_Studio_v2_7_Browser.html) · [Composants de l’installateur complet](https://github.com/RDunbar01/Nexus-Adapter-Studio/tree/main/releases/2.7.1) · [Notes de version](https://github.com/RDunbar01/Nexus-Adapter-Studio/blob/main/docs/CHANGELOG_2.7.1.md)
+
+Pour vérifier l’adaptateur, ouvrez **Settings → Browser trial · diagnostics and license → Check WebGPU adapter**.
+
+L’application installée et la version navigateur utilisent une palette violette, un logo et des icônes cohérents. Les libellés de projet et de modèle sont placés au-dessus des champs ; les noms longs s’adaptent à la largeur disponible. Les optimiseurs, les noyaux, les contrôles de compatibilité et le fonctionnement de l’entraînement restent inchangés.
+
+Les éditions navigateur et installée actuelles comportent les mêmes changements visuels. Le ZIP complet contient l’installateur et tous les fichiers de données ; conservez-les ensemble. Chaque fichier de données fait au plus 10 000 000 octets et chaque composant distribué moins de 20 000 000 octets. Cette mise à jour n’ajoute pas de modèles compatibles et ne constitue pas une qualification sur du matériel Windows/Radeon physique.
+
+L’utilisation personnelle et les tests et évaluations commerciaux internes du contenu Nexus sont autorisés. La distribution, la modification, le déploiement en production et les autres usages commerciaux exigent un consentement écrit exprès. Les licences tierces et les droits déjà accordés restent inchangés. [Autorisation d’évaluation](https://github.com/RDunbar01/Nexus-Adapter-Studio/blob/main/COMMERCIAL_EVALUATION_PERMISSION.md).
+
+## Notes de la version précédente (conservées sans modification)
+
 # Nexus Adapter Optimization Studio
 
 **Version 2.7.0**
