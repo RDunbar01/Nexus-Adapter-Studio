@@ -1,12 +1,20 @@
 {
   "file": "Nexus_Adapter_Optimization_Studio_v2_7_Browser.html",
-  "bytes": 8011206,
-  "sha256": "129f73f47005e26b02d6c8bbe6bfc29a302cd5802b49d48cea807bfa7275d65f",
-  "git_blob_sha": "cb219fc3c88e05be062ff884189af83cce51c68e",
-  "change": "Commercial testing and evaluation notice and linked permission only. Browser computation and native release payload are unchanged.",
+  "bytes": 8016589,
+  "sha256": "dd339703760286d34c6607710b4b4097da225473ffc9a2e4ca8b43b71eb286f6",
+  "git_blob_sha": "83c0613a6bd1259666d434e2398d71e584a20492",
+  "browserVersion": "2.7",
+  "presentationRevision": 1,
+  "nativeVersion": "2.7.0",
+  "nativePayloadChanged": false,
+  "baseCommit": "f8e25008d3e81fb665964fbb2be59bbb1894e355",
+  "change": "Replace opening trial banner with integrated Settings diagnostics and license; place product logo in actual sidebar. Existing onboarding, consent, engine and local-data paths retained.",
   "checks": {
-    "static_dependency_and_network_policy": "passed",
-    "full_dom_regression": "passed",
-    "physical_gpu_execution": "not_run"
+    "freshStorageDOM": "passed; explicit notice acceptance only in isolated test fixtures",
+    "settingsNavigation": "passed",
+    "diagnosticsAndLicense": "passed",
+    "runtimeNetworkRequests": 0,
+    "physical_gpu_execution": "not_run",
+    "realBrowserRendering": "pending live deployment; local Chromium launch blocked by sandbox socket policy"
   }
 }
